@@ -1,0 +1,134 @@
+/* /////////////////////////////////////////// Inicio.css //////////////////////////////////////////////*/
+/* Fondo degradado diagonal */
+body {
+    background: linear-gradient(135deg, #000000, #7e0808, #b5472f, #290c02);
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+
+/* Estilos para el carrusel */
+.custom-carousel {
+    max-width: 100%; /* Asegúrate de que el carrusel no sea más ancho que la pantalla */
+    margin: 0 auto; /* Centra el carrusel */
+    max-height: 350px; /* Limita la altura del carrusel */
+}
+
+.carousel-container {
+    display: flex; /* Usamos flexbox para alinear las imágenes horizontalmente */
+    justify-content: space-between; /* Espaciado entre las imágenes */
+}
+
+.carousel-container img {
+    flex: 1; /* Las imágenes ocupan espacio equitativo */
+    margin: 0 5px; /* Espacio entre imágenes */
+    max-height: 350px; /* Ajusta la altura máxima */
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+}
+
+.dimmed-image {
+    filter: brightness(80%);
+}
+
+/*ESTILOS PARA LA SECCION DE INFORMACION*/
+.info-container {
+    text-align: center; /* Centra el texto */
+    margin: 50px 0; /* Margen vertical para separar del carrusel */
+}
+
+.info-container h1 {
+    font-size: 36px;
+    color: #ffffff;
+    margin: 40px 0;
+}
+
+.info-content {
+    display: flex; /* Usamos flexbox para alinear imagen y texto */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente el contenido */
+    color: #ffffff;
+}
+
+.info-image {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 15px;
+}
+
+.info-text {
+    max-width: 550px; /* Ancho máximo para el texto */
+    font-size: 20px; /* Tamaño del texto */
+}
+
+/* Sección de Bienvenida */
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 10px;
+    margin: 20px 0; /* Espacio entre secciones */
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    color: #7e0808; /* Color atractivo */
+}
+
+.welcome-section p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.explore-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #7e0808; /* Color del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.explore-button:hover {
+    background-color: #b5472f; /* Color al pasar el mouse */
+}
+
+/* Sección de Categorías */
+.categories-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 10px 0; /* Reducir espacio entre secciones */
+}
+
+.categories-section h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.categories-section p {
+    font-size: 20px;
+    color: #000;
+}
+
+/* Sección de Contacto */
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 10px;
+    margin: 20px 0; /* Espacio entre secciones */
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #7e0808; /* Color atractivo */
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333; /* Color del texto */
+}
+
+
+

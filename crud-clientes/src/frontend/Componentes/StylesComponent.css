@@ -1,0 +1,462 @@
+/* /////////////////////////////////////////// Navbar.css //////////////////////////////////////////////*/
+.navbar {
+    background-color: #000000; /* Fondo negro */
+    height: 80px; /* Ajusta el alto del navbar */
+    padding: 0; /* Elimina el padding extra en el navbar */
+}
+
+.navbar-brand img {
+    height: auto; /* Ocupar todo el alto del navbar */
+    width: 100px; /* Mantener proporciones */
+    margin-left: 40px; /* Margen izquierdo */
+    padding: 0; /* Elimina cualquier espacio interno de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Color del texto blanco */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilo para la opción activa */
+.navbar-nav .nav-link.active {
+    color: #229954 !important; /* Cambia a verde si está activa */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link .icon {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos a la izquierda y derecha */
+    align-items: center;
+}
+
+ /* Estilo para la opcion activa de compra y favorito */
+.navbar-icons .icons-link {
+    color: #fff !important; /* Color del texto blanco */
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+/* Estilo para la opción activa */
+.navbar-icons .icons-link.active {
+    color: #229954 !important; /* Cambia a verde si está activa */
+    font-weight: bold;
+}
+
+.navbar-icons .icon {
+    font-size: 30px; /* Aumenta el tamaño de los íconos */
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+/* /////////////////////////////////////////// NavbarPRODUCTOS.css //////////////////////////////////////////////*/
+.navbar-productos { /* Cambié el nombre aquí */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco con 80% de opacidad */
+    height: 45px; /* Ajusta el alto del navbar */
+    padding: 0; /* Elimina el padding extra en el navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Color del texto blanco */
+    display: flex;
+    align-items: center;
+    padding: 15px 20px; /* Aumenta el padding (15px arriba y abajo, 20px a los lados) */
+    margin: 0 10px; /* Agrega margen horizontal entre los enlaces */
+}
+
+/* Estilo para la opción activa */
+.navbar-nav .nav-link.active {
+    color: #229954 !important; /* Cambia a verde si está activa */
+    font-weight: bold; /* Negrita para la opción activa */
+}
+
+.navbar-nav .nav-link .icon {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos a la izquierda y derecha */
+    align-items: center;
+}
+
+.navbar-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los íconos de carrito y favoritos */
+    margin-right: 40px;
+}
+
+.navbar-icons .nav-link .icon {
+    font-size: 30px;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Cambia el color del borde del botón de menú */
+}
+
+.navbar-toggler-icon {
+    color: #ffffff; /* Cambia el color del icono de menú */
+}
+
+/* /////////////////////////////////////////// CARTAS DE PRODUCTOS //////////////////////////////////////////////*/
+
+/* Espacio entre el navbar y las tarjetas */
+.row {
+    margin-top: 30px; /* Mayor espacio entre el navbar de productos y las tarjetas */
+}
+
+/* Estilos para las tarjetas de producto */
+/* /////////////////////////////////////////// CARTAS DE PRODUCTOS //////////////////////////////////////////////*/
+
+/* Espacio entre el navbar de productos y las tarjetas */
+.product-container {
+    margin-top: 50px; /* Aumenta el margen superior entre el navbar de productos y las tarjetas */
+}
+
+/* Estilos para las tarjetas de producto */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo blanco traslúcido (40% de opacidad) */
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.row-cols-md-4 .col {
+    margin-bottom: 20px;
+}
+
+
+/*////////////////////////////////////////////////DESCRPICON PRODUCTO////////////////////////////////////////////////*/
+/* Contenedor principal del detalle del producto */
+.detalle-producto-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 14px;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Fondo claro para todo el contenedor */
+    padding: 20px;
+}
+
+/* Imagen del producto */
+.detalle-producto-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Información del producto */
+.detalle-producto-info {
+    flex: 1;
+    padding: 2rem;
+    background-color: #ffffff; /* Fondo blanco para mayor contraste */
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-titulo {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.producto-descripcion {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.producto-detalles p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.detalle-etiqueta {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Selector de cantidad */
+.selector-cantidad {
+    margin-bottom: 1.5rem;
+}
+
+.cantidad-control {
+    display: flex;
+    align-items: center;
+}
+
+.cantidad-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cantidad-boton {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cantidad-boton:hover {
+    background-color: #bbb;
+}
+
+/* Botón para añadir al carrito */
+.boton-agregar-carrito {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.boton-agregar-carrito:hover {
+    background-color: #0056b3;
+}
+
+/*//////////////////////////////////////////////// Tabla de Pedidos //////////////////////////////////////////////*/
+.historial-pedidos-container {
+    padding: 0 20px; /* Espacio de 20px a la izquierda y derecha */
+}
+
+/*////////////////////////////////////////////// Tabla Carrito //////////////////////////////////////////////////////*/
+.carrito-container {
+    padding: 0 20px;
+}
+
+/*////////////////////////////////////////////// Tabla Favoritos //////////////////////////////////////////////////////*/
+.favoritos-container {
+    padding: 0 20px;
+}
+
+/*////////////////////////////////////////////////VENTANA PARA FILTRADO DE PEDIDOS////////////////////////////////////////////////*/
+/* Estilo del modal de filtro */
+.filtro-modal-header {
+    background-color: #ffffff;
+    border: none;
+  }
+  
+  .filtro-modal-body {
+    background: linear-gradient(to bottom, #000000, #333333);
+    color: white;
+  }
+  
+  .filtro-opcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .filtro-opcion:hover {
+    background-color: #444;
+  }
+  
+  .filtro-opcion.selected {
+    color: #1db954;
+  }
+  
+  .check-icon {
+    margin-left: 10px;
+    color: #1db954;
+  }
+  
+  .filtro-texto {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+/* Estilos para el contenedor de Organizar Pedidos */
+.organizar-pedidos-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px; /* Espacio entre la opción y la tabla */
+  }
+  
+  /* Estilos para Organizar Pedidos */
+  .organizar-pedidos {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    padding: 8px 12px; /* Espacio interno para mejorar el área clickeable */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .organizar-pedidos:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo suave al pasar el cursor */
+    color: #e0e0e0; /* Cambio de color del texto */
+  }
+  
+  .organizar-pedidos span {
+    margin-right: 8px;
+  }
+  
+  .organizar-icon {
+    display: flex;
+    align-items: center;
+    color: rgb(43, 192, 242);
+  }
+  
+/*/////////////////////////////// PERFIL DE USUARIO /////////////////////////////////*/
+.user-profile {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo más claro para mayor contraste */
+    padding: 30px; /* Aumentar el padding para más espacio interno */
+    border-radius: 15px; /* Bordes más redondeados */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.profile-icon {
+    font-size: 70px; /* Aumentar el tamaño del ícono */
+    margin-right: 15px; /* Espacio entre el ícono y el título */
+    color: #cd4545; /* Color del ícono */
+}
+
+.profile-info {
+    margin: 15px 0; /* Espacio entre cada campo de información */
+    display: flex; /* Usar flexbox para alinear etiquetas y valores */
+    justify-content: flex-start; /* Alinear etiquetas y valores a la izquierda */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px; /* Padding interno para mayor comodidad */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro para distinguir cada campo */
+}
+
+.profile-info label {
+    font-weight: bold;
+    color: #555; /* Color de etiqueta más suave */
+    width: 150px; /* Ancho fijo para las etiquetas */
+}
+
+.profile-info span, .profile-info input {
+    flex: 1; /* Permitir que el span y el input ocupen el espacio restante */
+    margin-left: 10px; /* Espacio entre la etiqueta y el valor */
+}
+
+.btn-editar-personalizado {
+    background-color: #ed4949; /* Tono rojo claro */
+    color: #ffffff; /* Color de texto oscuro */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave */
+    margin-right: 10px; /* Añadir espacio a la derecha */
+}
+
+.btn-editar-personalizado:hover {
+    background-color: #e62639; /* Color de fondo al pasar el cursor */
+}
+
+.btn-guardar-personalizado {
+    background-color: #007bff; /* Tono azul claro */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding interno */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    transition: background-color 0.3s; /* Transición suave */
+    margin-left: 10px; /* Añadir espacio a la izquierda */
+}
+
+.btn-guardar-personalizado:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilo para los campos de entrada */
+.profile-info input {
+    flex: 1; /* Permitir que el input ocupe el espacio restante */
+    margin-left: 10px; /* Espacio entre la etiqueta y el valor */
+    padding: 10px; /* Padding interno para mayor comodidad */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+.profile-info input:focus {
+    border-color: #007bff; /* Cambiar el color del borde al enfocar */
+    outline: none; /* Eliminar el contorno predeterminado */
+}
+  
+/*//////////////////////////////////TITULOS////////////////////////////////////*/
+.titulo-historial {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco traslúcido */
+    padding: 10px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #0f0c0c; /* Color del texto */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+  
+  
+  
+  
